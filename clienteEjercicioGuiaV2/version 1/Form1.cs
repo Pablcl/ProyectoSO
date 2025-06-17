@@ -10,7 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using v1;
 
-namespace version_1             /////////PAULAAAAAAA
+namespace version_1            
 {
     public partial class Form1: Form
     {
@@ -28,8 +28,8 @@ namespace version_1             /////////PAULAAAAAAA
         private void btnconexion_Click(object sender, EventArgs e)
         {
             //Creamos un IPEndPoint con el ip del servidor y puerto del servidor al que deseamos conectarnos
-            IPAddress direc = IPAddress.Parse("192.168.56.102");
-            IPEndPoint ipep = new IPEndPoint(direc, 9050);
+            IPAddress direc = IPAddress.Parse("10.4.119.5");
+            IPEndPoint ipep = new IPEndPoint(direc,50010);
 
             //Creamos el socket 
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -39,11 +39,6 @@ namespace version_1             /////////PAULAAAAAAA
                 server.Connect(ipep);
                 this.BackColor = Color.Green;
                 MessageBox.Show("Conectado");
-
-                //Pongo en marcha el thread que atenderá los mensajes del servidor
-                //ThreadStart ts = delegate { AtenderServidor(); };
-                //atender = new Thread(ts);
-                //atender.Start();
 
             }
             catch (SocketException ex)
@@ -67,10 +62,6 @@ namespace version_1             /////////PAULAAAAAAA
 
             
                 MessageBox.Show(respuesta);
-            //else if (respuesta == "ERROR AL INSERTAR EL NUEVO USUARIO")
-            //    MessageBox.Show("ERROR AL INSERTAR EL NUEVO USUARIO");
-            //else if (respuesta == "ERROR USUARIO CON LA MISMA CUENTA")
-            //    MessageBox.Show("ERROR USUARIO CON LA MISMA CUENTA");
 
             if (respuesta == "El usuario y/o la contrase￱a no son correctos") 
             { 
@@ -125,14 +116,5 @@ namespace version_1             /////////PAULAAAAAAA
             conectados.Text = respuesta;
         }
     }
-
-        //BOTÓN DE CONSULTA 1
-
-        //BOTÓN DE CONSULTA 2
-
-        //BOTÓN DE CONSULTA 3
-
-
-
-    }
+}
 

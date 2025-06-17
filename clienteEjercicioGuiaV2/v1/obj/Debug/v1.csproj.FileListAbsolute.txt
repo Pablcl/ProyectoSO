@@ -20,14 +20,3 @@ C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormulario
 C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\v1\bin\Debug\v1.exe.config
 C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\v1\bin\Debug\v1.exe
 C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\v1\bin\Debug\v1.pdb
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\bin\Debug\v1.exe.config
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\bin\Debug\v1.exe
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\bin\Debug\v1.pdb
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\obj\Debug\v1.csproj.AssemblyReference.cache
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\obj\Debug\v1.Form1.resources
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\obj\Debug\v1.Form2.resources
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\obj\Debug\v1.Properties.Resources.resources
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\obj\Debug\v1.csproj.GenerateResource.cache
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\obj\Debug\v1.csproj.CoreCompileInputs.cache
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\obj\Debug\v1.exe
-C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\v1\obj\Debug\v1.pdb
