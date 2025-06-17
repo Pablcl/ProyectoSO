@@ -38,9 +38,9 @@ Una vez completadas todas las versiones preliminares, cada grupo implementará e
 
 ## Tecnologías usadas
 
-- Lenguaje de programación: [Indicar lenguaje]
-- Frameworks / Librerías: [Indicar si se usan]
-- Base de datos: [Indicar base de datos]
+- Lenguaje de programación: C#
+- Frameworks / Librerías: .NET
+- Base de datos: SQL
 
 ---
 
@@ -59,6 +59,20 @@ Una vez completadas todas las versiones preliminares, cada grupo implementará e
 [Especificar licencia del proyecto]
 
 ---
+
+## Vídeos de cada versión
+
+versión 1: https://youtu.be/hNBozB-SRcQ
+
+versión 2: https://www.youtube.com/watch?v=viDg6YxOjs4
+
+versión 3: https://www.youtube.com/watch?v=mCpoR4QUM8w
+
+versión 4: https://youtu.be/7fexIMi69Uc
+
+versión 5: https://www.youtube.com/watch?v=Qz7Xw9_plZ2
+
+
 
 Si necesitas ayuda o tienes dudas, no dudes en contactar con los responsables del proyecto o consultar la documentación adicional.
 
