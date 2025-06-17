@@ -1,0 +1,72 @@
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\version 1.exe.config
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\version 1.exe
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\version 1.pdb
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.AssemblyReference.cache
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version_1.Form1.resources
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version_1.Properties.Resources.resources
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.GenerateResource.cache
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.CoreCompileInputs.cache
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.exe
+C:\share\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.pdb
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\version 1.exe.config
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\version 1.exe
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\version 1.pdb
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.AssemblyReference.cache
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version_1.Form1.resources
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version_1.Properties.Resources.resources
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.GenerateResource.cache
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.CoreCompileInputs.cache
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.exe
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.pdb
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\v1.exe
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\v1.pdb
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\v1.exe.config
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.Up2Date
+C:\uni\4 cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version_1.Form2.resources
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\version 1.exe.config
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\version 1.exe
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\version 1.pdb
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\v1.exe
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\v1.pdb
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\bin\Debug\v1.exe.config
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.AssemblyReference.cache
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version_1.Form1.resources
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version_1.Form2.resources
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version_1.Properties.Resources.resources
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.GenerateResource.cache
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.CoreCompileInputs.cache
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.csproj.Up2Date
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.exe
+C:\uni\4_cuatri\so\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\clienteEjercicioGuia\version 1\obj\Debug\version 1.pdb
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\version 1.exe.config
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\version 1.exe
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\version 1.pdb
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\v1.exe
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\v1.pdb
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\v1.exe.config
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.csproj.AssemblyReference.cache
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version_1.Form1.resources
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version_1.Form2.resources
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version_1.Form3.resources
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version_1.Properties.Resources.resources
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.csproj.Up2Date
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.exe
+\\Mac\Home\Downloads\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.pdb
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\version 1.exe.config
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\version 1.exe
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\version 1.pdb
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\v1.exe
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\v1.pdb
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\bin\Debug\v1.exe.config
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.csproj.AssemblyReference.cache
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version_1.Form1.resources
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version_1.Form2.resources
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version_1.Form3.resources
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version_1.Properties.Resources.resources
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.csproj.GenerateResource.cache
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.csproj.CoreCompileInputs.cache
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.csproj.Up2Date
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.exe
+C:\uni\4_cuatri\so\clienteEjercicioGuiaV2\clienteEjercicioGuiaV2\version 1\obj\Debug\version 1.pdb
