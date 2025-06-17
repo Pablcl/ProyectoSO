@@ -35,10 +35,10 @@
             // 
             // AceptarBtn
             // 
-            this.AceptarBtn.Location = new System.Drawing.Point(84, 311);
-            this.AceptarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AceptarBtn.Location = new System.Drawing.Point(42, 223);
+            this.AceptarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AceptarBtn.Name = "AceptarBtn";
-            this.AceptarBtn.Size = new System.Drawing.Size(424, 111);
+            this.AceptarBtn.Size = new System.Drawing.Size(240, 80);
             this.AceptarBtn.TabIndex = 0;
             this.AceptarBtn.Text = "Aceptar";
             this.AceptarBtn.UseVisualStyleBackColor = true;
@@ -46,10 +46,10 @@
             // 
             // RechazarBtn
             // 
-            this.RechazarBtn.Location = new System.Drawing.Point(560, 311);
-            this.RechazarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RechazarBtn.Location = new System.Drawing.Point(306, 223);
+            this.RechazarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.RechazarBtn.Name = "RechazarBtn";
-            this.RechazarBtn.Size = new System.Drawing.Size(424, 111);
+            this.RechazarBtn.Size = new System.Drawing.Size(240, 80);
             this.RechazarBtn.TabIndex = 1;
             this.RechazarBtn.Text = "Rechazar";
             this.RechazarBtn.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(128, 148);
+            this.label1.Location = new System.Drawing.Point(39, 108);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 16);
@@ -69,11 +69,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(591, 318);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.RechazarBtn);
             this.Controls.Add(this.AceptarBtn);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAceptarInv";
             this.Text = "Form4";
             this.ResumeLayout(false);

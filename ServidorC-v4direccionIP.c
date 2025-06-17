@@ -24,6 +24,7 @@ typedef struct {
 	char invitado[100];//NOMBRE DE LES PERSONES M�XIMS AL MATEIX JOC ES 4.	
 }invitados;
 typedef struct {
+	int idPartidas;
 	char anfitrion[100];
 	invitados inv[3];
 	int numinvitados;
@@ -43,6 +44,7 @@ int sockets[100];
 
 //Variables de lista Partidas
 listaPartidas milistaP;
+int idPartida=1;
 //FUNCIONES
 int PonConectados (ListaConectados *lista, char nombre[20], int socketreb)
 {
@@ -63,7 +65,7 @@ int DamePosicion (ListaConectados *lista, char nombre[20])
 	int encontrado =0;
 	while ((i<lista-> num)&&!encontrado)
 	{
-		if (strcmp(lista->conectados[i].nombre, nombre))
+		if (strcmp(lista->conectados[i].nombre, nombre) == 0)
 			encontrado =1;
 		if (!encontrado )
 			i=i+1;
@@ -136,7 +138,10 @@ int PonJugadores(listaPartidas *listaP, char nanfitrion[100], char nInvitado[100
 	}
 	else
 	{
+		idPartida ++;
 		strcpy(listaP->jugadores[pos].anfitrion, nanfitrion);
+		listaP->jugadores[pos].idPartidas = idPartida;
+		printf("id partidas: %d\n",listaP->jugadores[pos].idPartidas );
 		ninvitadotok = strtok(nInvitado, ",");
 		
 		while (ninvitadotok != NULL)
@@ -212,19 +217,21 @@ int EliminarJugadores(listaPartidas *listaP, char ninvitado[20])
 		return 0;
 	}
 }
-void DameNombresDeLosJugadores(listaPartidas *listaP, char nanfitrion[200], char result[300])
+void DameNombresDeLosJugadores(listaPartidas *listaP, char nanfitrion[200], char result[300], int idpartidaDN)
 {
 	for (int j = 0; j < listaP->numjugadores; j++)
 	{
-		if(strcmp(listaP->jugadores[j].anfitrion, nanfitrion)==0)
-		{
-			sprintf(result, "%s", nanfitrion);
-			for(int i = 0; i < listaP->jugadores[j].numinvitados; i++)
+		if((strcmp(listaP->jugadores[j].anfitrion, nanfitrion)==0) && (listaP->jugadores[j].idPartidas == idpartidaDN))
+				
 			{
-				sprintf(result, "%s/%s", result, listaP->jugadores[j].inv[i].invitado);
+				sprintf(result, "%s", nanfitrion);
+				for(int i = 0; i < listaP->jugadores[j].numinvitados; i++)
+				{
+					sprintf(result, "%s/%s", result, listaP->jugadores[j].inv[i].invitado);
+				}
+				return; // Salir después de encontrar la partida
 			}
-			return; // Salir después de encontrar la partida
-		}
+		
 	}
 	// Si no se encuentra la partida
 	sprintf(result, "%s", nanfitrion);
@@ -282,20 +289,44 @@ void *AtenderCliente(void *sock)
 		if ((codigo<3)&&(codigo != 0)) 
 		{
 			p = strtok(NULL, "/");
-			if (p != NULL) strcpy(userID, p);
+			if (p != NULL)
+				strcpy(userID, p);
 			p = strtok(NULL, "/");
-			if (p != NULL) strcpy(password, p);
+			if (p != NULL)
+				strcpy(password, p);
 			p = strtok(NULL, "/");
-			if (p != NULL) strcpy(playername, p);
+			if (p != NULL) 
+				strcpy(playername, p);
 			printf("Codigo: %d, UserID: %s, Password: %s, Playername: %s\n", codigo, userID, password, playername);
 		}
 		
 		if (codigo == 0)//Desconectar
 		{
-			EliminarConectados(&milista, userID);
-			printf("se ha desconectado %s\n",userID);
-			sprintf(respuesta,"0/Se ha desconectado\n");
+			char userID0 [20];
+			char *x1 = strtok(NULL, "/");
+			strcpy(userID0, x1);
+			
+			pthread_mutex_lock(&mutex);
+			EliminarConectados(&milista, userID0);
+			pthread_mutex_unlock(&mutex);
+			printf("se ha desconectado %s\n",userID0);
+			sprintf(respuesta,"0/ok");
 			write (sock_conn,respuesta, strlen(respuesta));
+			
+			//actualiza la lista de los conectados
+			char misContactos[400];
+			// Bloqueamos el mutex antes de leer la lista
+			pthread_mutex_lock(&mutex);
+			DameConectados(&milista, misContactos);
+			pthread_mutex_unlock(&mutex); // Desbloqueamos el mutex
+			char notificacion[100];
+			sprintf(notificacion, "7/%s", misContactos);
+			printf("%s\n",notificacion);
+			int j;
+			for(j=0; j<numsock;j++)
+			{
+				write (sockets[j], notificacion, strlen(notificacion));
+			}
 			terminar = 1;
 		}
 		else if (codigo == 1) //INICIAR SESION
@@ -348,24 +379,26 @@ void *AtenderCliente(void *sock)
 				sprintf(respuesta, "Error al insertar datos en la base: %u %s\n", mysql_errno(conn), mysql_error(conn));
 				exit(1);
 			}
-			resultado = mysql_store_result(conn);
-			row = mysql_fetch_row(resultado);
-			sprintf(respuesta, "2/Se ha registrado correctamente: %s\n", userID);
+/*			resultado = mysql_store_result(conn);*/
+/*			row = mysql_fetch_row(resultado);*/
+			sprintf(respuesta, "2/Bienvenido jugador %s", userID);
+			printf("respuesta: %s\n", respuesta);
 			write (sock_conn,respuesta, strlen(respuesta));
 			
-			char misContactos[400];
+			//notificacion
+/*			char misContactos[400];*/
 			// Bloqueamos el mutex antes de leer la lista
-			pthread_mutex_lock(&mutex);
-			DameConectados(&milista, misContactos);
-			pthread_mutex_unlock(&mutex); // Desbloqueamos el mutex
-			char notificacion[100];
-			sprintf(notificacion, "7/%s", misContactos);
-			printf("%s\n",notificacion);
-			int j;
-			for(j=0; j<numsock;j++)
-			{
-				write (sockets[j], notificacion, strlen(notificacion));
-			}
+/*			pthread_mutex_lock(&mutex);*/
+/*			DameConectados(&milista, misContactos);*/
+/*			pthread_mutex_unlock(&mutex); */// Desbloqueamos el mutex
+/*			char notificacion[100];*/
+/*			sprintf(notificacion, "7/%s", misContactos);*/
+/*			printf("%s\n",notificacion);*/
+/*			int j;*/
+/*			for(j=0; j<numsock;j++)*/
+/*			{*/
+/*				write (sockets[j], notificacion, strlen(notificacion));*/
+/*			}*/
 			
 			
 		}
@@ -476,7 +509,8 @@ void *AtenderCliente(void *sock)
 			strcpy(nombresInvitados, x2);
 			strcpy(nombresInvitados2, nombresInvitados); // Copia para strtok
 			// Añadir a la lista de partidas
-			if(PonJugadores(&milistaP, anfitrion6, nombresInvitados2) == -1) {
+			if(PonJugadores(&milistaP, anfitrion6, nombresInvitados2) == -1)
+			{
 				sprintf(respuesta, "6/Error: No se pudo crear la partida");
 				write(sock_conn, respuesta, strlen(respuesta));
 				break;
@@ -485,7 +519,7 @@ void *AtenderCliente(void *sock)
 			char *invitado = strtok(nombresInvitados, ",");
 			while (invitado != NULL)
 			{
-				sprintf(respuesta, "6/%s/%s", anfitrion6, invitado);
+				sprintf(respuesta, "6/%s/%s", anfitrion6, invitado, idPartida);
 				
 				// Buscar socket del invitado
 				
@@ -505,7 +539,7 @@ void *AtenderCliente(void *sock)
 		
 		else if (codigo == 65)
 		{
-			//formato: 65/yes or no/anfitrion/nombre invitado
+			//formato: 65/yes or no/anfitrion/nombre invitado 
 			char resinvitado[100]; //respuesta del invitado
 			char anfitrion65[200];
 			char Invitado65[100];
@@ -523,7 +557,7 @@ void *AtenderCliente(void *sock)
 			char *x4 = strtok (NULL, "/");
 			strcpy(Invitado65, x4);
 			printf("invitado:%s", Invitado65);
-			
+		
 			
 			printf("resinv: %s. invitado65: %s\n", resinvitado, Invitado65);
 			if(strcmp(resinvitado, "yes")==0)
@@ -532,7 +566,7 @@ void *AtenderCliente(void *sock)
 				//funcion creado para encontrar el anfitrion con el nombre del invitado dado y guarda ese nombre al variable anfitrion
 				
 				printf ("Jugador %s ha aceptado tu invitacion, anfitrion: %s, resinv: %s\n", Invitado65, anfitrion65, resinvitado);
-				sprintf (respuesta,"65/yes/%s/%s", anfitrion65,Invitado65);//65/yes/usuario anfitrion/usuarioInvitado,
+				sprintf (respuesta,"65/yes/%s/%s/%d", anfitrion65,Invitado65, idPartida);//65/yes/usuario anfitrion/usuarioInvitado / idpartida
 				
 			}
 			else
@@ -541,7 +575,7 @@ void *AtenderCliente(void *sock)
 				res =EliminarJugadores(&milistaP, Invitado65);
 				pthread_mutex_unlock(&mutex);
 				printf ( "Jugador %s ha rechazado tu invitacion, resinv: %s\n", Invitado65, resinvitado);
-				sprintf (respuesta,"65/no/%s/%s", anfitrion65, Invitado65);
+				sprintf (respuesta,"65/no/%s/%s/%d", anfitrion65, Invitado65, idPartida);
 			}
 			int j;
 			
@@ -558,6 +592,7 @@ void *AtenderCliente(void *sock)
 		// Chat
 		else if (codigo == 66)
 		{
+			//anfitrion /sender/mensaje/id partida
 			char anfitrion66[200];
 			char sender[200];
 			char message[1000];
@@ -584,29 +619,116 @@ void *AtenderCliente(void *sock)
 			}
 			strcpy(message, x3);
 			
+			char *x4 = strtok(NULL, "/");
+			int idpartida66 = atoi (x4);
 			// Preparar mensaje para enviar
 			sprintf(respuesta, "66/%s/%s", sender, message);
 			// Obtener nombres de todos los jugadores en la partida
 			char nombrejugadores[300];
-			DameNombresDeLosJugadores(&milistaP, anfitrion66, nombrejugadores);
+			DameNombresDeLosJugadores(&milistaP, anfitrion66, nombrejugadores, idpartida66);
 			
 			// Enviar mensaje a cada jugador
 			char *token = strtok(nombrejugadores, "/");
 			while (token != NULL) 
-			{        int socket66 = DameSocketConectados(&milista, token);
-			if (socket66 >= 0) 
-			{
-				write(socket66, respuesta, strlen(respuesta));
+			{        
+				int socket66 = DameSocketConectados(&milista, token);
+			
+				if (socket66 >= 0) 
+				{
+					write(socket66, respuesta, strlen(respuesta));
+				}
+				token = strtok(NULL, "/");
 			}
-			token = strtok(NULL, "/");
+		}
+		
+		//PARTE DEL JUEGO
+		//Compartir el valor de dado obtenido a resta de los jugadores dentro de la partida
+		else if (codigo == 10)
+		{
+			//10/anfitrion/nombreusuario/número de pregunta/resultado/idPartida
+			char anfitrion10[200];
+			char tirador10[200];
+			int numPregunta10;
+			int resultado10;
+			int idpartida10;
+			
+			// Extraer datos
+			char *x1 = strtok(NULL, "/");
+			strcpy(anfitrion10, x1);
+			printf("anf: %s\n", anfitrion10);
+			
+			char *x2 = strtok(NULL, "/");
+			strcpy(tirador10, x2);
+			printf("tirador: %s\n", tirador10);
+			
+			char *x3 = strtok(NULL, "/");
+			numPregunta10 = atoi(x3);
+			printf("num pregunta: %d\n", numPregunta10);
+			
+			char *x4 = strtok(NULL, "/");
+			resultado10 = atoi(x4);
+			printf("res: %d\n", resultado10);
+			
+			char *x5 = strtok(NULL, "/");
+			idpartida10 = atoi(x5);
+			printf("id: %d\n", idpartida10);
+			
+			sprintf(respuesta, "10/%s/%s/%d/%d/%d", anfitrion10, tirador10, numPregunta10, resultado10, idpartida10);	
+			//buscar los jugadores
+			char nameresult10[1000];
+			DameNombresDeLosJugadores(&milistaP, anfitrion10, nameresult10, idpartida10);
+			char *token = strtok(nameresult10, "/");
+			while (token != NULL) 
+			{        
+				int socket10 = DameSocketConectados(&milista, token);
+				
+				if (socket10 >= 0) 
+				{
+					write(socket10, respuesta, strlen(respuesta));
+				}
+				token = strtok(NULL, "/");
+			}
+		}
+		//11/anfitrion/NumPregunta/idPartida
+		else if(codigo==11)
+		{
+			char anfitrion11[200];
+			int numPregunta11;
+			int idpartida11;
+			
+			// Extraer datos
+			char *x1 = strtok(NULL, "/");
+			strcpy(anfitrion11, x1);
+			printf("anf: %s\n", anfitrion11);
+			
+			char *x2 = strtok(NULL, "/");
+			numPregunta11 = atoi(x2);
+			printf("num pregunta11: %d\n", numPregunta11);
+			
+			char *x3 = strtok(NULL, "/");
+			idpartida11 = atoi(x3);
+			printf("id11: %d\n", idpartida11);
+			
+			//11/anfitrion/NumPregunta/idPartida
+			sprintf(respuesta, "11/%s/%d/%d", anfitrion11, numPregunta11, idpartida11);	
+			//buscar los jugadores
+			char nameresult11[1000];
+			DameNombresDeLosJugadores(&milistaP, anfitrion11, nameresult11, idpartida11);
+			char *token = strtok(nameresult11, "/");
+			while (token != NULL) 
+			{        
+				int socket11 = DameSocketConectados(&milista, token);
+				
+				if (socket11 >= 0) 
+				{
+					write(socket11, respuesta, strlen(respuesta));
+				}
+				token = strtok(NULL, "/");
 			}
 		}
 		
 		printf ("Respuesta: %s\n", respuesta);
 		// Enviamos respuesta
-		
-		
-		
 	}
 	close(sock_conn);
 }
@@ -617,7 +739,7 @@ int main(int argc, char *argv[])
 {
 	int sock_conn, sock_listen, ret;
 	struct sockaddr_in serv_adr;
-	int puerto = 9010;
+	int puerto = 9014; //!!!
 	milista.num=0;
 	
 	// Crear socket de escucha
@@ -659,10 +781,5 @@ int main(int argc, char *argv[])
 		pthread_create (&thread[numsock], NULL, AtenderCliente,&sockets[numsock]);
 		numsock++;
 	}
-	
-	/*	for (i=0;i<5;i++)*/
-	/*	{*/
-	/*		pthread_join (&thread[i], NULL);*/
-	/*	}*/
 }
 

@@ -21,11 +21,15 @@ namespace version_1
         bool conecion;
         string NombreUsuario;//el nombre del usuario que se ha inicado la sesion
         int inicializado = 0; // variable para saber si el usuario ha inicializado la sesion o no
+        DataTable dt = new DataTable();// tabla para almacenar los usuarios conectados
         FormPartida formPlay; //para inicar la partida
+        int repetir = 0; //para saber si el anfitrion ha vuelto a abrir form partida al mismo partida
+        int partidaId = 0;
         public FormConexion()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
+            dt.Columns.Add("Nombre", typeof(string));
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,24 +43,28 @@ namespace version_1
             {
                 //recepción de mensaje de servidor
                 byte[] msg2 = new byte[80];
-                 server.Receive(msg2);
+                server.Receive(msg2);
                 string[] trozos = Encoding.ASCII.GetString(msg2).Split('\0')[0].Split('/');
                 int codigo = Convert.ToInt32(trozos[0]);
                 string mensaje;
-                string[] nombreinvitar= new string[2];
+                string[] nombreinvitar = new string[2];
                 switch (codigo)
                 {
 
                     case 0: // log out
-                        this.BackColor = Color.Gray;
-                        server.Shutdown(SocketShutdown.Both);
-                        server.Close();
-                        MessageBox.Show("Se ha desconectado de servidor.");
+                        if (trozos[1] == "ok")
+                        {
+                            label3.BackColor = Color.Gray;
+                            server.Shutdown(SocketShutdown.Both);
+                            server.Close();
+                            conecion = false;
+                            MessageBox.Show("Se ha desconectado de servidor.");
+                        }
                         break;
 
                     case 1: //login
                         mensaje = trozos[1];
-                        if (mensaje == "El usuario o la contrasena no son correctos\n") 
+                        if (mensaje == "El usuario o la contrasena no son correctos\n")
                         {
                             MessageBox.Show(mensaje);
                         }
@@ -64,28 +72,17 @@ namespace version_1
                         {
                             MessageBox.Show(mensaje);
                             // Forms de peticiones del cliente
-                            this.Invoke((MethodInvoker)delegate {
+                            this.Invoke((MethodInvoker)delegate
+                            {
                                 FormPeticiones form2 = new FormPeticiones(server);
                                 form2.Show();
-                            });              
+                            });
                         }
                         break;
 
                     case 2: //register
                         mensaje = trozos[1];
                         MessageBox.Show(mensaje);
-                        //if (mensaje == "No se han obtenido datos")
-                        //{
-                        //    MessageBox.Show("Error. No se han obtenido datos.");
-                        //}
-                        //else
-                        //{        
-                            // Forms de peticiones del cliente
-                            this.Invoke((MethodInvoker)delegate {
-                                FormPeticiones form2 = new FormPeticiones(server);
-                                form2.Show();
-                            });
-                        
                         break;
 
                     case 6:
@@ -95,21 +92,22 @@ namespace version_1
                         {
                             nombreinvitar[i - 1] = trozos[i];
                         } // FROMATO RECIBIDO: anfitrion/invitado
-                        
+
                         if (mensaje == "Error, no ha llegado el nombre.")
                         {
                             // Si el mensaje es "No se ha podido enviar la invitación" se muestra un mensaje de error
                             MessageBox.Show("No se ha podido enviar la invitación");
                         }
                         else
-                         {
+                        {
                             if (nombreinvitar[1] == NombreUsuario)//para en invitado
                             {
                                 MessageBox.Show("Has recibido una invitación de " + nombreinvitar[0]);
-                                this.Invoke((MethodInvoker)delegate {
-                                    FormAceptarInv formAceptarInv = new FormAceptarInv(server, nombreinvitar[0], NombreUsuario );
+                                this.Invoke((MethodInvoker)delegate
+                                {
+                                    FormAceptarInv formAceptarInv = new FormAceptarInv(server, nombreinvitar[0], NombreUsuario);
                                     formAceptarInv.Show();
-                                }); 
+                                });
                             }
                             else
                             {
@@ -125,12 +123,12 @@ namespace version_1
                         break;
 
                     case 65:
-                        //65/yes/ usuario invitador/usuario invitado/invitado2...
-
-                        mensaje= trozos[1];
-                        string invitado = trozos[3];
+                        //65/yes/ anfitrion/usuario invitado/id partida
+                        mensaje = trozos[1];
                         string anfitrion = trozos[2];
-                        int repetir = 0; //para saber si el anfitrion ha vuelto a abrir form partida al mismo partida
+                        string invitado = trozos[3];
+                        int nuevoPartidaId = Convert.ToInt32(trozos[4]); // Guardar el nuevo ID
+
                         //respuesta invitacion
                         if (mensaje == "no")
                         {
@@ -138,26 +136,37 @@ namespace version_1
                         }
                         else
                         {
-                            //para el invitado
+                            // Si el usuario actual es el invitado
                             if ((mensaje == "yes") && (invitado == NombreUsuario))
                             {
                                 MessageBox.Show("Has aceptado la invitación");
                                 this.Invoke((MethodInvoker)delegate
-                                {                                                   //invitado, anfitrion
-                                    formPlay = new FormPartida(server, invitado, anfitrion, NombreUsuario);
+                                {
+                                    formPlay = new FormPartida(server, invitado, anfitrion, NombreUsuario, nuevoPartidaId);
                                     formPlay.Show();
                                 });
                             }
-                            //para el anfitrion
-                            if ((mensaje == "yes") && (anfitrion == NombreUsuario) && (repetir == 0)) 
+
+                            // Si el usuario actual es el anfitrión
+                            if ((mensaje == "yes") && (anfitrion == NombreUsuario))
                             {
-                                MessageBox.Show("Ha aceptado tu invitación");
-                                this.Invoke((MethodInvoker)delegate
+                                // Si es una nueva partida (ID diferente) o no hay ventana abierta
+                                if (nuevoPartidaId != partidaId || formPlay == null || formPlay.IsDisposed)
                                 {
-                                    formPlay = new FormPartida(server, invitado, anfitrion, NombreUsuario);
-                                    formPlay.Show();
-                                });
-                                repetir = 1; // para que no se vuelva a abrir el form partida si otro invitado vuelve a aceptar la invitación
+                                    MessageBox.Show("Ha aceptado tu invitación");
+                                    this.Invoke((MethodInvoker)delegate
+                                    {
+                                        formPlay = new FormPartida(server, invitado, anfitrion, NombreUsuario, nuevoPartidaId);
+                                        formPlay.Show();
+                                    });
+                                    partidaId = nuevoPartidaId; // Actualizar el ID de la partida actual
+                                    repetir = 0; // Permitir que se abra una nueva ventana si cambia la partida
+                                }
+                                // Si es la misma partida (mismo ID), no abrimos ventana nueva
+                                else
+                                {
+                                    MessageBox.Show("Ya tienes una ventana abierta para esta partida.");
+                                }
                             }
                         }
                         break;
@@ -172,44 +181,75 @@ namespace version_1
                                 formPlay.RecibirChat(sender, mensaje)
                             ));
                         }
-                            break;
+                        break;
 
-                    case 7: //notificacion                                       
-                        //7/num/conectado1/conectado2...
-                        string[] conectados = new string[80];
-                        int numeroConectados = Convert.ToInt32(trozos[1]);
-                        for (int i = 1; i <= numeroConectados; i++)
-                        {
-                              conectados[i-1] = trozos[i+1];
-                        }
-                        
-                        DataTable dt = new DataTable();
-                        dt.Columns.Add("Nombre");
-                        
-                        for (int i = 0; i < numeroConectados; i++)
-                        {
-                            // Verifica que el índice existe en el array
-                            if (i < numeroConectados+1)
-                            {
-                                string Nombres = conectados[i].Split('\0')[0];
-                                dt.Rows.Add(Nombres);
-                            }
-                            else
-                            {
-                                MessageBox.Show("Datos incompletos recibidos del servidor.");
-                                break;
-                            }
-                        }
-
-                        // Asignar el DataSource
+                    case 7:
                         this.Invoke((MethodInvoker)delegate
                         {
-                            dataGridViewConectados.DataSource = dt;
+                            try
+                            {
+                                int numeroConectados = Convert.ToInt32(trozos[1]);
+
+                                // Desvincular primero para evitar conflictos
+                                dataGridViewConectados.DataSource = null;
+
+                                // Limpiar la tabla antes de llenarla
+                                dt.Clear();
+
+                                for (int i = 0; i < numeroConectados; i++)
+                                {
+                                    int index = i + 2; // usuarios empiezan en trozos[2]
+                                    if (index < trozos.Length)
+                                    {
+                                        string nombreConectado = trozos[index];
+                                        if (!string.IsNullOrEmpty(nombreConectado))
+                                        {
+                                            DataRow newRow = dt.NewRow();
+                                            newRow["Nombre"] = nombreConectado;
+                                            dt.Rows.Add(newRow);
+                                        }
+                                    }
+                                }
+
+                                // Asignar nueva fuente de datos
+                                dataGridViewConectados.DataSource = dt;
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("Error al actualizar usuarios conectados: " + ex.Message);
+                            }
                         });
                         break;
-                        
-                }
 
+                    //recibir el resultado de dado 
+                    case 10:
+                        //10/anfitrion/nombreusuario/número de pregunta/resultado/idPartida
+                        string anfitrionTirar = trozos[1];
+                        string tirador = trozos[2];
+                        int numeroPregunta = Convert.ToInt32(trozos[3]); // Número de pregunta
+                        int resultado = Convert.ToInt32(trozos[4]);
+                        int idPartida = Convert.ToInt32(trozos[5]);
+                        if (formPlay != null)
+                        {
+                            formPlay.Invoke((MethodInvoker)(() =>
+                                formPlay.RespuestaDados(anfitrionTirar, tirador, numeroPregunta, resultado, idPartida)
+                            ));
+                        }
+                        break;
+                    case 11:
+                        //11/anfitrion/NumPregunta/idPartida
+                        string anfitrionPreguntar = trozos[1];
+                        int numeroPregunta11 = Convert.ToInt32(trozos[2]); // Número de pregunta
+                        int idPartida11 = Convert.ToInt32(trozos[3]);
+                        if (formPlay != null)
+                        {
+                            formPlay.Invoke((MethodInvoker)(() =>
+                                formPlay.Preguntas(numeroPregunta11)
+                            ));
+                        }
+                        break;
+
+                }
             }
         }
         // BOTÓN PARA INICIAR LA CONEXIÓN CON EL SERVIDOR
@@ -217,7 +257,7 @@ namespace version_1
         {
              //Creamos un IPEndPoint con el ip del servidor y puerto del servidor al que deseamos conectarnos
             IPAddress direc = IPAddress.Parse("192.168.56.102");//192.168.56.102, 10.4.119.5
-            IPEndPoint ipep = new IPEndPoint(direc, 9010);//0, 50007
+            IPEndPoint ipep = new IPEndPoint(direc, 9014);//9000, 50007
 
             //Creamos el socket 
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -245,6 +285,12 @@ namespace version_1
         {
             if (inicializado == 0)
             {
+                // Resetear si ya estaba inicializado
+                if (inicializado == 1)
+                {
+                    inicializado = 0;
+                }
+
                 NombreUsuario = userlogintxt.Text;
                 FormInvitar nuevoForm = new FormInvitar(NombreUsuario);
                 string mensaje = "1/" + userlogintxt.Text + "/" + passwordlogintxt.Text;
@@ -274,9 +320,19 @@ namespace version_1
 
         private void buttonDesconn_Click(object sender, EventArgs e)
         {
-            string mensaje = "0/";
+            string mensaje = "0/" + NombreUsuario;
             byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
             server.Send(msg);
+
+            // Resetear variables de estado
+            inicializado = 0;
+            conecion = false;
+            NombreUsuario = "";
+
+            // Limpiar el formulario
+            userlogintxt.Text = "";
+            passwordlogintxt.Text = "";
+            dt.Clear(); 
         }
 
         private void InvitarBtn_Click(object sender, EventArgs e)
