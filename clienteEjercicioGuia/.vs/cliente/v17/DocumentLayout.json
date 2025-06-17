@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|c:\\uni\\4 cuatri\\so\\ejercicioguiasistemasoperativos-versionconmultiplesformularios\\clienteejercicioguia\\version 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\Form1.cs",
+              "RelativeDocumentMoniker": "version 1\\Form1.cs",
+              "ToolTip": "C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\Form1.cs",
+              "RelativeToolTip": "version 1\\Form1.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwB8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:41:19.627Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\Form1.cs",
+              "RelativeDocumentMoniker": "version 1\\Form1.cs",
+              "ToolTip": "C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "version 1\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:32:54.155Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\Form2.cs",
+              "RelativeDocumentMoniker": "version 1\\Form2.cs",
+              "ToolTip": "C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\Form2.cs",
+              "RelativeToolTip": "version 1\\Form2.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:43:47.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\Form2.cs",
+              "RelativeDocumentMoniker": "version 1\\Form2.cs",
+              "ToolTip": "C:\\uni\\4 cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "version 1\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:27:46.842Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
