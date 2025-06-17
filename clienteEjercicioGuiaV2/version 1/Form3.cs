@@ -11,7 +11,7 @@ using v1;
 
 namespace version_1
 {
-    public partial class Form3: Form
+    public partial class Form3: System.Windows.Forms.Form
     {
         public Form3()
         {
@@ -22,8 +22,10 @@ namespace version_1
 
         private void jugar_btn_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            this.Hide();
+            FormConexion f1 = new FormConexion();
             f1.Show();
+            
         }
     }
 }

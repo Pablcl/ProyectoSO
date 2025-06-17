@@ -1,27 +1,76 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\",
+  "WorkspaceRootPath": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|\\\\mac\\home\\downloads\\clienteejercicioguiav2\\clienteejercicioguiav2\\version 1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|c:\\uni\\4_cuatri\\so\\v4\\versio4-21-05-25\\versio4-invitacio\\clienteejercicioguiav2\\version 1\\formconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\formconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|\\\\mac\\home\\downloads\\clienteejercicioguiav2\\clienteejercicioguiav2\\version 1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\formpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\formpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|\\\\mac\\home\\downloads\\clienteejercicioguiav2\\clienteejercicioguiav2\\version 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\formpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\formpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|\\\\mac\\home\\downloads\\clienteejercicioguiav2\\clienteejercicioguiav2\\version 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\formaceptarinv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\formaceptarinv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\formaceptarinv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\formaceptarinv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\formpeticiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\formpeticiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\formconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\formconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\forminvitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\forminvitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\formpeticiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\formpeticiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\forminstrucciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\forminstrucciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\forminvitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\forminvitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\forminstrucciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\forminstrucciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\formconexion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\formconexion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D6311-F96F-435F-B754-DDECA4168D6C}|version 1\\version 1.csproj|solutionrelative:version 1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\share\\versio4CHATonline\\ServidorCV3.3Shiva.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\share\\VERSIO3final\\ServidorCV3.3Shiva.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:version 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,95 +80,216 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form1.cs",
-              "RelativeDocumentMoniker": "version 1\\Form1.cs",
-              "ToolTip": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form1.cs",
-              "RelativeToolTip": "version 1\\Form1.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAgwFAAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FormConexion.cs",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormConexion.cs",
+              "RelativeDocumentMoniker": "version 1\\FormConexion.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormConexion.cs",
+              "RelativeToolTip": "version 1\\FormConexion.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAUwJ8AAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "version 1",
-              "WhenOpened": "2025-03-11T14:41:19.627Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form1.cs",
-              "RelativeDocumentMoniker": "version 1\\Form1.cs",
-              "ToolTip": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "version 1\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T14:32:54.155Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Program.cs",
-              "RelativeDocumentMoniker": "version 1\\Program.cs",
-              "ToolTip": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Program.cs",
-              "RelativeToolTip": "version 1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:26:59.796Z",
+              "WhenOpened": "2025-04-19T16:03:16.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form3.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form3.cs",
-              "RelativeDocumentMoniker": "version 1\\Form3.cs",
-              "ToolTip": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form3.cs",
-              "RelativeToolTip": "version 1\\Form3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Title": "FormPartida.cs",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormPartida.cs",
+              "RelativeDocumentMoniker": "version 1\\FormPartida.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormPartida.cs",
+              "RelativeToolTip": "version 1\\FormPartida.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwFMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:23:01.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T12:53:50.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form3.cs [Dise\u00F1o]",
-              "DocumentMoniker": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form3.cs",
-              "RelativeDocumentMoniker": "version 1\\Form3.cs",
-              "ToolTip": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form3.cs [Dise\u00F1o]",
-              "RelativeToolTip": "version 1\\Form3.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "FormPartida.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormPartida.cs",
+              "RelativeDocumentMoniker": "version 1\\FormPartida.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormPartida.cs [Dise\u00F1o]",
+              "RelativeToolTip": "version 1\\FormPartida.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:09:29.003Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-04-19T17:11:20.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormAceptarInv.cs",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormAceptarInv.cs",
+              "RelativeDocumentMoniker": "version 1\\FormAceptarInv.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormAceptarInv.cs",
+              "RelativeToolTip": "version 1\\FormAceptarInv.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:54:14.314Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form2.cs",
-              "RelativeDocumentMoniker": "version 1\\Form2.cs",
-              "ToolTip": "C:\\uni\\4_cuatri\\so\\EjercicioGuiaSistemasOperativos-VersionConMultiplesFormularios\\clienteEjercicioGuia\\version 1\\Form2.cs [Dise\u00F1o]",
+              "Title": "FormPeticiones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormPeticiones.cs",
+              "RelativeDocumentMoniker": "version 1\\FormPeticiones.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-19-05-25-despres consulta\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormPeticiones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\VERSIO4-19-05-25-despres consulta\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormPeticiones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T21:27:46.842Z"
+              "WhenOpened": "2025-04-18T11:57:35.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormInvitar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInvitar.cs",
+              "RelativeDocumentMoniker": "version 1\\FormInvitar.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-19-05-25-despres consulta\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInvitar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\VERSIO4-19-05-25-despres consulta\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInvitar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:57:06.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormAceptarInv.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormAceptarInv.cs",
+              "RelativeDocumentMoniker": "version 1\\FormAceptarInv.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormAceptarInv.cs [Dise\u00F1o]",
+              "RelativeToolTip": "version 1\\FormAceptarInv.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:54:13.158Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form2.cs",
-              "RelativeDocumentMoniker": "version 1\\Form2.cs",
-              "ToolTip": "\\\\Mac\\Home\\Downloads\\clienteEjercicioGuiaV2\\clienteEjercicioGuiaV2\\version 1\\Form2.cs",
-              "RelativeToolTip": "version 1\\Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAQAAAAAAAAAA==",
+              "Title": "FormConexion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormConexion.cs",
+              "RelativeDocumentMoniker": "version 1\\FormConexion.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-19-05-25-despres consulta\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormConexion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\VERSIO4-19-05-25-despres consulta\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormConexion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T21:43:47.753Z"
+              "WhenOpened": "2025-04-22T11:04:03.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\Form3.cs",
+              "RelativeDocumentMoniker": "version 1\\Form3.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\Form3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T17:45:05.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormPeticiones.cs",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormPeticiones.cs",
+              "RelativeDocumentMoniker": "version 1\\FormPeticiones.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormPeticiones.cs",
+              "RelativeToolTip": "version 1\\FormPeticiones.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:49:55.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormInstrucciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInstrucciones.cs",
+              "RelativeDocumentMoniker": "version 1\\FormInstrucciones.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInstrucciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInstrucciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T17:43:58.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormInvitar.cs",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInvitar.cs",
+              "RelativeDocumentMoniker": "version 1\\FormInvitar.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInvitar.cs",
+              "RelativeToolTip": "version 1\\FormInvitar.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA0wCgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:50:44.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormInstrucciones.cs",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInstrucciones.cs",
+              "RelativeDocumentMoniker": "version 1\\FormInstrucciones.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormInstrucciones.cs",
+              "RelativeToolTip": "version 1\\FormInstrucciones.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAArwBgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T17:44:38.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormConexion.Designer.cs",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormConexion.Designer.cs",
+              "RelativeDocumentMoniker": "version 1\\FormConexion.Designer.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\FormConexion.Designer.cs",
+              "RelativeToolTip": "version 1\\FormConexion.Designer.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAswLUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T11:55:25.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\Form3.cs",
+              "RelativeDocumentMoniker": "version 1\\Form3.cs",
+              "ToolTip": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\Form3.cs",
+              "RelativeToolTip": "version 1\\Form3.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T11:54:49.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ServidorCV3.3Shiva.c",
+              "DocumentMoniker": "C:\\share\\versio4CHATonline\\ServidorCV3.3Shiva.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\share\\versio4CHATonline\\ServidorCV3.3Shiva.c",
+              "ToolTip": "C:\\share\\versio4CHATonline\\ServidorCV3.3Shiva.c",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\share\\versio4CHATonline\\ServidorCV3.3Shiva.c",
+              "ViewState": "AgIAAEoBAAAAAAAAAAAowGoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-04-19T17:30:42.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ServidorCV3.3Shiva.c",
+              "DocumentMoniker": "C:\\share\\VERSIO3final\\ServidorCV3.3Shiva.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\share\\VERSIO3final\\ServidorCV3.3Shiva.c",
+              "ToolTip": "C:\\share\\VERSIO3final\\ServidorCV3.3Shiva.c",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\share\\VERSIO3final\\ServidorCV3.3Shiva.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-04-19T16:26:43.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\uni\\4_cuatri\\so\\V4\\VERSIO4-21-05-25\\VERSIO4-Invitacio\\clienteEjercicioGuiaV2\\version 1\\Form1.cs",
+              "RelativeDocumentMoniker": "version 1\\Form1.cs",
+              "ToolTip": "C:\\share\\VERSIO3final\\clienteEjercicioGuiaV2\\version 1\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\share\\VERSIO3final\\clienteEjercicioGuiaV2\\version 1\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T11:16:31.113Z"
             }
           ]
         }

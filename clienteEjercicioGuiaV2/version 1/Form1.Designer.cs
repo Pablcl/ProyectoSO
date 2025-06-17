@@ -42,6 +42,7 @@
             this.conectados = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Ver_btn = new System.Windows.Forms.Button();
+            this.Desconectar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -92,7 +93,7 @@
             // PLAYERNAME
             // 
             this.PLAYERNAME.Location = new System.Drawing.Point(47, 184);
-            this.PLAYERNAME.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PLAYERNAME.Margin = new System.Windows.Forms.Padding(2);
             this.PLAYERNAME.Name = "PLAYERNAME";
             this.PLAYERNAME.Size = new System.Drawing.Size(76, 20);
             this.PLAYERNAME.TabIndex = 2;
@@ -176,6 +177,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.Desconectar);
             this.groupBox3.Controls.Add(this.Ver_btn);
             this.groupBox3.Controls.Add(this.conectados);
             this.groupBox3.Location = new System.Drawing.Point(298, 12);
@@ -195,6 +197,16 @@
             this.Ver_btn.Text = "Ver";
             this.Ver_btn.UseVisualStyleBackColor = true;
             this.Ver_btn.Click += new System.EventHandler(this.Ver_btn_Click);
+            // 
+            // Desconectar
+            // 
+            this.Desconectar.Location = new System.Drawing.Point(220, 343);
+            this.Desconectar.Name = "Desconectar";
+            this.Desconectar.Size = new System.Drawing.Size(75, 23);
+            this.Desconectar.TabIndex = 4;
+            this.Desconectar.Text = "Desconectar";
+            this.Desconectar.UseVisualStyleBackColor = true;
+            this.Desconectar.Click += new System.EventHandler(this.Desconectar_Click);
             // 
             // Form1
             // 
@@ -233,6 +245,7 @@
         private System.Windows.Forms.Label conectados;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button Ver_btn;
+        private System.Windows.Forms.Button Desconectar;
     }
 }
 
